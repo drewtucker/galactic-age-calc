@@ -30,8 +30,20 @@ export class Calculator
   {
       let firstDate = new Date(`${day1}-${month1}-${year1}`);
       let secondDate = new Date(`${day2}-${month2}-${year2}`);
-      return (Date.parse(firstDate) - Date.parse(secondDate)) / 1000;
 
+      return (Date.parse(firstDate) - Date.parse(secondDate)) / 1000;
+  }
+
+//Average age = 72 years
+  LifeExpectancy(average, age, planet)
+  {
+    let LifeExpectancy;
+
+    if(planet.toLowerCase() === "mercury")
+    {
+      LifeExpectancy = Math.round( ((average - age) / 0.24) * 100) / 100;
+      return "You have about " + LifeExpectancy + "Mercury years left!";
+    }
   }
 
 }

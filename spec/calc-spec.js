@@ -27,4 +27,8 @@ describe('Calculator', function() {
   it("should test that the DateDifference function returns the difference between the two dates in seconds", function() {
     expect(calc.DateDifference(20, "March", 1992, 19, "March", 1992)).toEqual(86400);
   });
+
+  it("should test that the LifeExpectancy function returns the correct remaining years for each planet", function() {
+    expect(calc.LifeExpectancy(72, 20, "mercury")).toEqual("You have about " + 216.67 + "Mercury years left!");
+  });
 });
