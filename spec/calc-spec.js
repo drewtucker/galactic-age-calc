@@ -15,4 +15,16 @@ describe('Calculator', function() {
   it("should test that the AgeOnVenus function returns the correct age in VenusYears", function() {
     expect(calc.AgeOnVenus(15)).toEqual(24.19);
   });
+
+  it("should test that the AgeOnMars function returns the correct age in MarsYears", function() {
+    expect(calc.AgeOnMars(15)).toEqual(7.98);
+  });
+
+  it("should test that the AgeOnJupiter function returns the correct age in JupiterYears", function() {
+    expect(calc.AgeOnJupiter(15)).toEqual(1.26);
+  });
+
+  it("should test that the DateDifference function returns the difference between the two dates in seconds", function() {
+    expect(calc.DateDifference(20, "March", 1992, 19, "March", 1992)).toEqual(86400);
+  });
 });
