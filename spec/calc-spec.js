@@ -30,5 +30,9 @@ describe('Calculator', function() {
 
   it("should test that the LifeExpectancy function returns the correct remaining years for each planet", function() {
     expect(calc.LifeExpectancy(72, 20, "mercury")).toEqual("You have about " + 216.67 + "Mercury years left!");
+    expect(calc.LifeExpectancy(72, 20, "venus")).toEqual("You have about " + 83.87 + "Venus years left!");
+    expect(calc.LifeExpectancy(72, 20, "mars")).toEqual("You have about " + 27.66 + "Mars years left!");
+    expect(calc.LifeExpectancy(72, 20, "jupiter")).toEqual("You have about " + 4.38 + "Jupiter years left!");
+    expect(calc.LifeExpectancy(72, 73, "mercury")).toEqual("You're already over the average Life expectancy! Well done!");
   });
 });

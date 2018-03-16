@@ -34,4 +34,4 @@
 
   * Spec 3: Program will have a function to take two dates and return the difference, in seconds, between the two. Input: "3/16/2018, 3/16/2000" Output:"568036800 seconds"
 
-  * Spec 4: Program will have a function to determine the user's expected remaining lifespan on each planet. Input: "23 years old" Output: "You have ____ years left to live on Venus!" If user has already passed the average life expectancy for that planet, they will recieve a different message output.
+  * Spec 4: Program will have a function to determine the user's expected remaining lifespan on each planet. Input: "23 years old" Output: "You have ____ years left to live on Venus!" If user has already passed the average life expectancy for that planet, they will receive a different message output.
